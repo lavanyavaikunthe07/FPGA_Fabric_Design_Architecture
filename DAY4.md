@@ -1,4 +1,4 @@
-# Day 4 - Introduction to SOFA FPGA Fabric
+# DAY 4 - Introduction to SOFA FPGA Fabric
 
 ## Overview
 
