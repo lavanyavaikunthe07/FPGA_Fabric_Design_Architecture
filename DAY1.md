@@ -1,4 +1,4 @@
-# Day 1 – Introduction to FPGA Architecture and Vivado Design Flow
+# DAY 1 – Introduction to FPGA Architecture and Vivado Design Flow
 
 ## Objective
 
@@ -176,7 +176,8 @@ The waveform confirmed:
 
 ## Simulation Output
 
-<img width="940" height="486" alt="image" src="https://github.com/user-attachments/assets/456706e8-76f9-4326-ace5-82c53904f2f8" />
+<img width="952" height="527" alt="WhatsApp Image 2026-07-19 at 8 49 31 PM" src="https://github.com/user-attachments/assets/8c8ba0fa-57e9-4013-bdfe-753e8851acad" />
+
 
 
 *Behavioral simulation waveform of 4-bit up counter in Vivado.*
@@ -195,7 +196,8 @@ This stage verifies:
 
 ## RTL Schematic
 
-<img width="940" height="509" alt="image" src="https://github.com/user-attachments/assets/f7dc36a1-9bd2-4ff7-a69d-f282429c0aaa" />
+<img width="1170" height="480" alt="image" src="https://github.com/user-attachments/assets/245ba1f6-880a-4758-854e-c6b2acca5353" />
+
 
 
 *RTL elaborated schematic of the counter design.*
@@ -213,12 +215,14 @@ The constraints file maps:
 
 ## Constraint.xdc:
 
-<img width="940" height="534" alt="image" src="https://github.com/user-attachments/assets/49e5f102-7d0c-445a-bc7d-977c337e64a7" />
+<img width="948" height="642" alt="WhatsApp Image 2026-07-13 at 7 04 22 PM" src="https://github.com/user-attachments/assets/f9de5784-82ab-4d1f-a6cb-a2aa1ade89b2" />
+
 
 
 ## Package Mapping
 
-<img width="940" height="508" alt="image" src="https://github.com/user-attachments/assets/6d116368-aa34-4a35-a568-6161a491ee69" />
+<img width="525" height="515" alt="WhatsApp Image 2026-07-13 at 8 52 56 PM" src="https://github.com/user-attachments/assets/e3c3f0d7-0ae4-432e-884b-e04e0bac2458" />
+
 
 
 *FPGA package view showing physical pin assignments.*
@@ -273,7 +277,8 @@ Positive slack indicates timing is met.
 
 ## Design Timing Summary
 
-<img width="940" height="178" alt="image" src="https://github.com/user-attachments/assets/ec86bbd1-37fb-46ef-8bce-af7fc6712ddf" />
+<img width="940" height="178" alt="WhatsApp Image 2026-07-13 at 9 12 15 PM" src="https://github.com/user-attachments/assets/0c7b11ba-3e78-4eaf-93ed-227a8ff633ba" />
+
 
 
 *Timing analysis summary.*
@@ -292,7 +297,8 @@ Resources analyzed:
 
 ## Utilization Report
 
-<img width="800" height="318" alt="image" src="https://github.com/user-attachments/assets/cb63ddd1-a63c-4668-802f-bbf1ef172858" />
+<img width="800" height="318" alt="WhatsApp Image 2026-07-13 at 9 14 13 PM" src="https://github.com/user-attachments/assets/b24673da-9542-4513-951d-d7c4379501cc" />
+
 
 
 *FPGA resource utilization report after implementation.*
@@ -309,7 +315,8 @@ Power analysis estimates:
 
 ## Power Report
 
-<img width="778" height="384" alt="image" src="https://github.com/user-attachments/assets/606e0804-d336-4ec0-b000-e4b85e7c67bb" />
+<img width="778" height="384" alt="WhatsApp Image 2026-07-14 at 9 15 10 AM" src="https://github.com/user-attachments/assets/d2b3ac53-50a9-4247-b8aa-3a41e91593e3" />
+
 
 
 *Power analysis report generated after FPGA implementation.*
