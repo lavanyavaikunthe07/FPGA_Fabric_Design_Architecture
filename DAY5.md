@@ -1,4 +1,4 @@
-# Day 5 - RISCV Core on Custom SOFA Fabric
+# DAY 5 - RISCV Core on Custom SOFA Fabric
 
 The RVMYTH RISC-V core was integrated with the custom SOFA FPGA fabric and executed through the complete OpenFPGA and VTR flow. The implementation generated various timing, utilization, routing, and simulation reports which were analyzed to verify the correctness of the design and FPGA mapping process.
 
