@@ -1,256 +1,229 @@
 # FPGA_Fabric_Design_Architecture
 
+This repository contains the complete documentation, implementation flow, analysis reports, simulations, and FPGA architecture exploration performed during the FPGA Fabric Design and Architecture workshop.
 
-> Comprehensive documentation of the complete FPGA implementation
-> flow---from RTL design to FPGA fabric generation---using
-> industry-standard and open-source FPGA CAD tools.
+The work focuses on understanding the complete FPGA implementation flow starting from RTL design up to FPGA architecture generation, placement, routing, timing analysis, utilization analysis, power analysis, and post-implementation verification using open-source FPGA CAD tools.
 
-------------------------------------------------------------------------
+The repository documents the complete hands-on flow using:
 
-## Overview
+- VTR (Verilog-to-Routing)
+- VPR (Versatile Place and Route)
+- OpenFPGA
+- Vivado
+- SOFA FPGA Fabric
+- RISC-V Processor Core (RVMYTH)
 
-This repository documents the hands-on work carried out during the
-**FPGA Fabric Design and Architecture Workshop**. It covers the complete
-FPGA design flow, including RTL development, simulation, synthesis,
-placement, routing, timing analysis, power estimation, FPGA architecture
-exploration, and post-implementation verification.
+---
 
-The workshop emphasizes understanding how a Verilog RTL design is
-transformed into a hardware implementation on an FPGA using modern FPGA
-CAD frameworks.
+# Workshop Overview
 
-The implementation flow includes:
+The workshop focused on understanding how digital RTL designs are transformed into FPGA hardware implementations using open-source FPGA CAD frameworks.
 
--   RTL Design
--   Functional Simulation
--   Logic Synthesis
--   Technology Mapping
--   Placement
--   Routing
--   Static Timing Analysis (STA)
--   Resource Utilization Analysis
--   Power Analysis
--   FPGA Fabric Generation
--   Post-Implementation Simulation
+The flow covered:
 
-------------------------------------------------------------------------
+- RTL Design
+- Functional Simulation
+- FPGA Synthesis
+- Technology Mapping
+- Placement
+- Routing
+- Timing Analysis
+- FPGA Resource Utilization
+- Power Analysis
+- FPGA Fabric Generation
+- Post Implementation Simulation
 
-## Tools & Frameworks
+The workshop also introduced custom FPGA architectures using SOFA FPGA fabric and OpenFPGA framework.
 
-  -----------------------------------------------------------------------
-  Tool                         Purpose
-  ---------------------------- ------------------------------------------
-  **Vivado**                   RTL simulation, synthesis, implementation,
-                               and analysis
+---
 
-  **VTR (Verilog-to-Routing)** Open-source FPGA CAD flow
+# Tools Used
 
-  **VPR (Versatile Place and   Placement, routing, and timing analysis
-  Route)**                     
+| Tool | Purpose |
+|------|----------|
+| Vivado | RTL Simulation and FPGA Analysis |
+| VTR | FPGA CAD Flow |
+| VPR | Placement and Routing |
+| OpenFPGA | FPGA Fabric Generation |
+| Verilog | RTL Design |
+| SDC | Timing Constraints |
 
-  **OpenFPGA**                 FPGA fabric generation and architecture
-                               exploration
+---
 
-  **SOFA FPGA**                Custom FPGA architecture framework
+# Repository Structure
 
-  **Verilog HDL**              RTL design
+| Day | Description |
+|-----|-------------|
+| [Day 1](./DAY1.md) | Introduction to FPGA Flow, Vivado Simulation and Basic Counter Design |
+| [Day 2](./DAY2.md) | VTR Flow, EArch Architecture, Timing Constraints, Routing and FPGA Reports |
+| [Day 3](./DAY3.md) | Mythcore Processor Implementation, ILA Debugging and FPGA Analysis |
+| [Day 4](./DAY4.md) | Post Synthesis Simulation, Primitive Models and Timing Verification |
+| [Day 5](./DAY5.md) | RISC-V Core on Custom SOFA FPGA Fabric using OpenFPGA |
 
-  **SDC**                      Timing constraints
-  -----------------------------------------------------------------------
-
-------------------------------------------------------------------------
-
-## Repository Structure
-
-  -----------------------------------------------------------------------
-  Day              Topics Covered
-  ---------------- ------------------------------------------------------
-  **Day 1**        FPGA fundamentals, Vivado simulation, Verilog basics,
-                   4-bit counter design
-
-  **Day 2**        VTR flow, EArch FPGA architecture, SDC constraints,
-                   placement, routing, timing and utilization reports
-
-  **Day 3**        RVMYTH RISC-V processor implementation, FPGA analysis,
-                   ILA debugging
-
-  **Day 4**        Post-synthesis simulation, primitive models, timing
-                   verification
-
-  **Day 5**        RISC-V implementation on SOFA FPGA using OpenFPGA
-  -----------------------------------------------------------------------
-
-------------------------------------------------------------------------
-
-# Design Flow
-
-``` text
-RTL Design
-     │
-     ▼
-Functional Simulation
-     │
-     ▼
-Logic Synthesis
-     │
-     ▼
-Technology Mapping
-     │
-     ▼
-Placement
-     │
-     ▼
-Routing
-     │
-     ▼
-Timing & Power Analysis
-     │
-     ▼
-FPGA Fabric Generation
-     │
-     ▼
-Post-Implementation Verification
-```
-
-------------------------------------------------------------------------
+---
 
 # Topics Covered
 
-## FPGA Fundamentals
+## FPGA Basics
 
--   FPGA Architecture
--   Configurable Logic Blocks (CLBs)
--   Look-Up Tables (LUTs)
--   Flip-Flops
--   Routing Resources
--   Clock Networks
+- FPGA Architecture
+- LUTs and Flip-Flops
+- Routing Resources
+- FPGA Logic Blocks
+- Clock Networks
 
-## RTL Design & Verification
+---
 
--   Verilog HDL
--   Testbench Development
--   Functional Simulation
--   Waveform Analysis
+## RTL Design and Simulation
+
+- Verilog HDL
+- Testbench Creation
+- RTL Functional Simulation
+- Waveform Analysis
+
+---
 
 ## FPGA CAD Flow
 
--   Logic Synthesis
--   Technology Mapping
--   Placement
--   Routing
--   Bitstream Generation
+- RTL Synthesis
+- Technology Mapping
+- Placement
+- Routing
+- Bitstream Generation
 
-## Static Timing Analysis
+---
 
--   Setup Analysis
--   Hold Analysis
--   Critical Path Identification
--   Timing Constraints using SDC
+## Timing Analysis
+
+- Setup Timing
+- Hold Timing
+- Critical Path Analysis
+- Timing Constraints using SDC
+
+---
 
 ## FPGA Architecture Exploration
 
--   EArch FPGA Architecture
--   SOFA FPGA Fabric
--   Routing Congestion Analysis
--   Resource Utilization
--   Timing Closure
+- EArch FPGA Architecture
+- SOFA FPGA Fabric
+- FPGA Resource Utilization
+- Routing Congestion Analysis
+
+---
 
 ## OpenFPGA Flow
 
--   FPGA Fabric Generation
--   Architecture Mapping
--   Netlist Generation
--   Post-Implementation Simulation
+- FPGA Fabric Generation
+- FPGA Architecture Mapping
+- Netlist Generation
+- Post Implementation Simulation
 
-------------------------------------------------------------------------
+---
+
+# Important Concepts Explored
+
+- FPGA Fabric Architecture
+- Routing Architecture
+- Timing Closure
+- Placement and Routing
+- Resource Utilization
+- Power Estimation
+- Processor Implementation on FPGA
+- FPGA Netlist Generation
+- Open-source FPGA Toolchain
+
+---
 
 # FPGA Architectures Explored
 
-## EArch FPGA Architecture
+## EArch Architecture
 
-The EArch architecture was explored to understand:
+The EArch FPGA architecture was used to understand:
 
--   Placement algorithms
--   Routing architecture
--   Timing analysis
--   FPGA resource utilization
--   Netlist generation
+- FPGA routing resources
+- Timing analysis
+- FPGA placement
+- FPGA netlist generation
+
+---
 
 ## SOFA FPGA Fabric
 
-The SOFA FPGA framework was used to implement the **RVMYTH RISC-V
-Processor Core**.
+The SOFA FPGA fabric was used for implementing the RVMYTH RISC-V processor core using OpenFPGA framework.
 
-Key areas explored include:
+Features explored:
 
--   Custom FPGA fabric generation
--   Placement and routing
--   Timing closure
--   Resource utilization
--   Post-implementation verification
+- FPGA fabric generation
+- Timing closure
+- FPGA routing
+- Resource utilization
+- Post implementation simulation
 
-------------------------------------------------------------------------
+---
 
-# Reports & Outputs
+# Outputs Generated
 
-The workshop generated the following implementation reports:
+The following reports and outputs were generated during the workshop:
 
--   RTL Simulation Waveforms
--   Placement Reports
--   Routing Reports
--   Setup Timing Reports
--   Hold Timing Reports
--   Critical Path Reports
--   FPGA Utilization Reports
--   Power Analysis Reports
--   FPGA Netlists
--   FPGA Architecture Reports
--   Post-Implementation Simulation Results
+- RTL Simulation Waveforms
+- Timing Reports
+- Hold Reports
+- Setup Reports
+- FPGA Utilization Reports
+- Placement Reports
+- Routing Reports
+- Post Implementation Simulation
+- FPGA Netlists
+- FPGA Architecture Reports
+- Power Analysis Reports
 
-------------------------------------------------------------------------
+---
 
-# Key Learning Outcomes
+# Learning Outcomes
 
-By completing this workshop, the following practical concepts were
-gained:
+Through this workshop, the following concepts were understood practically:
 
--   Complete FPGA implementation flow
--   RTL-to-FPGA design methodology
--   FPGA architecture exploration
--   Open-source FPGA CAD toolchain
--   Placement and routing techniques
--   Static timing analysis and timing closure
--   FPGA resource utilization analysis
--   Power estimation
--   FPGA fabric generation using OpenFPGA
--   RISC-V processor implementation on a custom FPGA fabric
+- FPGA implementation flow
+- FPGA architecture exploration
+- RTL to GDS-style FPGA flow
+- Open-source FPGA CAD frameworks
+- Timing analysis and timing closure
+- FPGA routing and placement
+- FPGA resource analysis
+- Processor implementation on FPGA fabric
 
-------------------------------------------------------------------------
+---
 
 # References
 
--   VLSI System Design --- https://www.vlsisystemdesign.com/ip/
--   RVMYTH RISC-V Core --- https://github.com/shivanishah269/risc-v-core
--   4-Stage RISC-V Core ---
-    https://github.com/ShonTaware/RISC-V_Core_4_Stage
--   SOFA FPGA Framework --- https://github.com/lnis-uofu/SOFA
--   OpenFPGA Documentation ---
-    https://openfpga.readthedocs.io/en/master/
--   VPR Documentation ---
-    https://docs.verilogtorouting.org/en/latest/vpr/
--   VTR Documentation --- https://docs.verilogtorouting.org/en/latest/
+## VLSI System Design
+https://www.vlsisystemdesign.com/ip/
 
-------------------------------------------------------------------------
+## RISC-V Based Microprocessor
+https://github.com/shivanishah269/risc-v-core
 
-# Acknowledgements
+## 4-stage RISC-V Core
+https://github.com/ShonTaware/RISC-V_Core_4_Stage
 
-Special thanks to:
+## SOFA FPGA Framework
+https://github.com/lnis-uofu/SOFA
 
--   **Kunal Ghosh** --- VSD Corp Pvt. Ltd.
--   **VSD Workshop Team**
+## OpenFPGA Documentation
+https://openfpga.readthedocs.io/en/master/
 
-------------------------------------------------------------------------
+## VPR Documentation
+https://docs.verilogtorouting.org/en/latest/vpr/
 
-This repository serves as a comprehensive reference for the complete
-FPGA implementation workflow, FPGA architecture exploration, and
-hands-on experience with modern open-source FPGA CAD frameworks.
+## VTR Documentation
+https://docs.verilogtorouting.org/en/latest/
+
+---
+
+# Acknowledgement
+
+- Kunal Ghosh – VSD Corp Pvt Ltd
+- VSD Workshop Team
+
+This repository documents the complete hands-on FPGA architecture and FPGA CAD flow exploration performed during the workshop.
+
+---
