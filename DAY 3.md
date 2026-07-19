@@ -65,7 +65,8 @@ The Mythcore processor was first simulated before synthesis to verify proper fun
 
 ## RTL Simulation Output
 
-<img width="940" height="227" alt="image" src="https://github.com/user-attachments/assets/c733cc34-ec14-4639-bb95-c7be878720ff" />
+<img width="1181" height="682" alt="WhatsApp Image 2026-07-13 at 12 03 53 AM" src="https://github.com/user-attachments/assets/c3e4529a-aad1-40e3-9b79-c064de88934c" />
+
 
 
 *RTL simulation waveform of Mythcore processor*
@@ -90,7 +91,8 @@ Since Mythcore is significantly more complex than a simple counter, the generate
 
 ## RTL Schematic Output
 
-<img width="940" height="311" alt="image" src="https://github.com/user-attachments/assets/5e46f9d8-6b2e-40ba-8a09-0940976834af" />
+<img width="1002" height="602" alt="WhatsApp Image 2026-07-13 at 12 58 32 AM" src="https://github.com/user-attachments/assets/416bab53-bd34-4d65-b35b-758e87ee5cef" />
+
 
 *RTL schematic generated for Mythcore processor*
 
@@ -111,7 +113,8 @@ This helped in understanding:
 
 ## Package View Output
 
-<img width="940" height="437" alt="image" src="https://github.com/user-attachments/assets/1fb84060-2fb8-4aba-8707-3b6410bceb27" />
+<img width="377" height="372" alt="WhatsApp Image 2026-07-19 at 8 19 04 PM" src="https://github.com/user-attachments/assets/900c3492-b5f2-41cc-9b76-457d1e139698" />
+
 
 *FPGA package view showing FPGA resource utilization*
 
@@ -202,7 +205,8 @@ Compared to the counter design, Mythcore consumed significantly more FPGA resour
 
 ## Utilization Report
 
-<img width="778" height="405" alt="image" src="https://github.com/user-attachments/assets/9a21a045-3139-4f65-9d5a-92367041cb9c" />
+<img width="1002" height="602" alt="WhatsApp Image 2026-07-13 at 12 57 28 AM" src="https://github.com/user-attachments/assets/c1d15875-866b-407a-be96-67c29da887d2" />
+
 
 *FPGA utilization report for Mythcore processor.*
 
@@ -218,7 +222,8 @@ Timing analysis ensures:
 - Proper hold timing
 - Correct clock synchronization
 
-<img width="940" height="218" alt="image" src="https://github.com/user-attachments/assets/f54df0f0-8c2e-4235-8dba-cf1e4f0b3ef1" />
+<img width="1277" height="305" alt="WhatsApp Image 2026-07-13 at 1 00 34 AM" src="https://github.com/user-attachments/assets/dba6bafd-7a4e-4e74-b185-9c62eb4c8106" />
+
 
 *Timing analysis summary*
 
@@ -248,7 +253,8 @@ The report included:
 
 ## Power Analysis Output
 
-<img width="776" height="327" alt="image" src="https://github.com/user-attachments/assets/dcc1ed07-e60d-4c0d-a01b-da582730bece" />
+<img width="981" height="463" alt="WhatsApp Image 2026-07-13 at 1 10 49 AM" src="https://github.com/user-attachments/assets/f096431a-4847-4013-81fd-a1eb4ee732b9" />
+
 
 *Power analysis report of Mythcore FPGA implementation.*
 
