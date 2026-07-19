@@ -1,4 +1,4 @@
-# Day 2 - Exploring OpenFPGA, VPR and VTR Flow
+# DAY 2 - Exploring OpenFPGA, VPR and VTR Flow
 
 ## Introduction
 
