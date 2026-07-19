@@ -12,26 +12,12 @@ The design consumes LUTs, latches, CLBs, routing resources, and logic elements. 
 
 ## Circuit Statistics
 
-- Total Blocks: 5526
-- Inputs: 2
-- Latches: 1807
-- Outputs: 8
-- 0-LUTs: 4
-- 4-LUTs: 3705
-
-## Net Statistics
-
-- Total Nets: 5518
-- Average Fanout: 3.1
-- Maximum Fanout: 1807
-- Minimum Fanout: 1.0
+<img width="330" height="182" alt="WhatsApp Image 2026-07-19 at 3 13 35 PM" src="https://github.com/user-attachments/assets/9a07c834-feff-4357-841a-f9269b5e061a" />
 
 ## Timing Graph
 
-- Timing Graph Nodes: 22705
-- Netlist Clocks: 1
+<img width="540" height="505" alt="WhatsApp Image 2026-07-19 at 3 16 23 PM" src="https://github.com/user-attachments/assets/42a7e6c2-0dfb-470e-bfd9-ea553b64f51c" />
 
-<img width="737" height="508" alt="image" src="https://github.com/user-attachments/assets/17be3dde-1973-4f0d-b3ef-595d39615bb9" />
 
 *Detailed FPGA primitive block usage and logic element statistics for the RVMYTH implementation.*
 
@@ -57,10 +43,6 @@ The constraint file defines:
 
 These constraints are used by the timing analysis engine during placement and routing.
 
-<img width="940" height="149" alt="image" src="https://github.com/user-attachments/assets/189d0a21-364a-44cf-8984-dbb105813b27" />
-
-*SDC constraints file used for RVMYTH implementation on the SOFA FPGA fabric.*
-
 ---
 
 # Timing Analysis
@@ -69,7 +51,8 @@ Timing analysis was performed after placement and routing to verify whether the 
 
 The setup timing report shows that the data arrival time is within the required timing limits and timing slack is positive.
 
-<img width="658" height="562" alt="image" src="https://github.com/user-attachments/assets/322adca8-4b7e-4e0d-9ce2-d97e25f2f13f" />
+<img width="1000" height="491" alt="WhatsApp Image 2026-07-19 at 3 56 54 PM" src="https://github.com/user-attachments/assets/07f652b7-5a27-4795-8ce2-0bb5d497c9ab" />
+
 
 *Setup timing analysis report showing positive timing slack for the RVMYTH core.*
 
@@ -79,7 +62,8 @@ The setup timing report shows that the data arrival time is within the required 
 
 Hold timing analysis verifies that the data remains stable for the required duration after the clock edge.
 
-<img width="703" height="608" alt="image" src="https://github.com/user-attachments/assets/56ddd848-a357-4390-9668-ffed0fdb4a0e" />
+<img width="942" height="578" alt="WhatsApp Image 2026-07-19 at 3 59 02 PM" src="https://github.com/user-attachments/assets/5f942aa4-136c-4651-b4e9-5b761438ec98" />
+
 
 *Hold timing analysis report showing successful hold timing closure.*
 
@@ -93,7 +77,8 @@ The generated waveform confirms the correct execution of the processor logic aft
 
 The waveform also demonstrates proper output transitions and stable processor execution after implementation.
 
-<img width="973" height="258" alt="image" src="https://github.com/user-attachments/assets/0faf8ae4-f2db-4f7f-886a-d55028ed1691" />
+
+<img width="1268" height="572" alt="WhatsApp Image 2026-07-19 at 8 41 49 PM" src="https://github.com/user-attachments/assets/053c0cf1-a6f2-4adf-a22b-cb4df705af47" />
 
 
 *Post implementation simulation waveform of the RVMYTH core on SOFA FPGA fabric.*
