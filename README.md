@@ -54,11 +54,11 @@ The workshop also introduced custom FPGA architectures using SOFA FPGA fabric an
 
 | Day | Description |
 |-----|-------------|
-| [Day 1](./Day1.md) | Introduction to FPGA Flow, Vivado Simulation and Basic Counter Design |
-| [Day 2](./Day2.md) | VTR Flow, EArch Architecture, Timing Constraints, Routing and FPGA Reports |
-| [Day 3](./Day3.md) | Mythcore Processor Implementation, ILA Debugging and FPGA Analysis |
-| [Day 4](./Day4.md) | Post Synthesis Simulation, Primitive Models and Timing Verification |
-| [Day 5](./Day5.md) | RISC-V Core on Custom SOFA FPGA Fabric using OpenFPGA |
+| [Day 1](./DAY1.md) | Introduction to FPGA Flow, Vivado Simulation and Basic Counter Design |
+| [Day 2](./DAY2.md) | VTR Flow, EArch Architecture, Timing Constraints, Routing and FPGA Reports |
+| [Day 3](./DAY3.md) | Mythcore Processor Implementation, ILA Debugging and FPGA Analysis |
+| [Day 4](./DAY4.md) | Post Synthesis Simulation, Primitive Models and Timing Verification |
+| [Day 5](./DAY5.md) | RISC-V Core on Custom SOFA FPGA Fabric using OpenFPGA |
 
 ---
 
